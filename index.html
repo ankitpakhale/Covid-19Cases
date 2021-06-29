@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #map{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <!-- <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style> -->
+    <title>CoronaMap</title>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+
+<!-- <div id='map' style='width: 400px; height: 300px;'></div> -->
+<!-- <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYW5raXQwNzQ1IiwiYSI6ImNrZnV3NGNncjF6ZDYyeHBhaHV5bTI5YmUifQ.S-f1ue0qpJ3ml1WxCznZNg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom: 1
+  });
+</script> -->
+
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYW5raXQwNzQ1IiwiYSI6ImNrZnV3NGNncjF6ZDYyeHBhaHV5bTI5YmUifQ.S-f1ue0qpJ3ml1WxCznZNg';
+var map = new mapboxgl.Map({
+container: 'map',
+zoom: 9,
+center: [137.9150899566626, 36.25956997955441],
+style: 'mapbox://styles/mapbox/satellite-v9',
+zoom: 1
+});
+</script>
+
+<script src="/index.js"></script>
+</html>
